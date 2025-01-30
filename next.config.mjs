@@ -21,9 +21,9 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/gatcha' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/gatcha' : '',
+  // output: 'export', // Comment out or remove this line
+  // basePath: process.env.NODE_ENV === 'production' ? '/gatcha' : '',
+  // assetPrefix: process.env.NODE_ENV === 'production' ? '/gatcha' : '',
 }
 
 mergeConfig(nextConfig, userConfig)
