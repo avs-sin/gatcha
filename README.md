@@ -1,17 +1,24 @@
-# My V0 Project
+# Gatcha
 
-## Getting Started
+## Overview
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with various UI components.
+Gatcha is a modern web application built with Next.js, featuring a robust set of UI components and cutting-edge web technologies.
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (version 18 or later)
-- npm or yarn
+- **Node.js**: Version 18 or later
+- **Package Manager**: npm or yarn
 
 ### Installation
 
-1. Clone the repository
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/avs-sin/gatcha.git
+   cd gatcha
+   ```
+
 2. Install dependencies:
    ```bash
    npm install
@@ -22,40 +29,53 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with various UI co
 ### Development
 
 Run the development server:
-
 ```bash
 npm run dev
 # or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-### Deployment
+## 🛠 Technologies Used
 
-#### Vercel (Recommended)
+- **Framework**: [Next.js](https://nextjs.org/) 14
+- **Styling**: 
+  - [Tailwind CSS](https://tailwindcss.com/)
+  - [shadcn/ui](https://ui.shadcn.com/)
+- **Component Libraries**:
+  - [Radix UI](https://www.radix-ui.com/)
+  - [Lucide React](https://lucide.dev/)
+- **Form Handling**: 
+  - [React Hook Form](https://react-hook-form.com/)
+  - [Zod](https://zod.dev/) (Validation)
+- **State Management**: React Hooks
+- **Deployment**: GitHub Pages, Vercel
+
+## 📦 Available Scripts
+
+- `npm run dev`: Start development server
+- `npm run build`: Create production build
+- `npm run start`: Start production server
+- `npm run export`: Generate static export
+- `npm run deploy`: Deploy to GitHub Pages
+
+## 🚢 Deployment
+
+### GitHub Pages
+The project is configured for GitHub Pages deployment:
+1. Pushes to `main` trigger automatic deployment
+2. Site is live at [https://avs-sin.github.io/gatcha](https://avs-sin.github.io/gatcha)
+
+### Vercel (Recommended)
 1. Sign up at [Vercel](https://vercel.com)
 2. Import your GitHub repository
-3. Vercel will automatically detect it's a Next.js project
+3. Vercel will automatically detect and optimize the Next.js project
 
-#### GitHub Pages
-1. Install `gh-pages` package:
-   ```bash
-   npm install gh-pages --save-dev
-   ```
-2. Add deployment scripts to `package.json`:
-   ```json
-   "scripts": {
-     "deploy": "next build && next export && gh-pages -d out"
-   }
-   ```
+## 📝 License
 
-### Technologies Used
-- Next.js
-- React
-- Tailwind CSS
-- Radix UI Components
-- shadcn/ui
+[Add your license here - e.g., MIT, Apache 2.0]
 
-### License
-[Add your license here] 
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. 
