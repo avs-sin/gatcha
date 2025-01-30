@@ -37,6 +37,25 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
+## 🚢 Deployment
+
+### Vercel (Recommended)
+1. Sign up at [Vercel](https://vercel.com)
+2. Import your GitHub repository
+3. Vercel will automatically detect and optimize the Next.js project
+
+### GitHub Pages
+1. Install gh-pages package:
+   ```bash
+   npm install gh-pages --save-dev
+   ```
+2. Add deployment scripts to package.json:
+   ```json
+   "scripts": {
+     "deploy": "next build && next export && gh-pages -d out"
+   }
+   ```
+
 ## 🛠 Technologies Used
 
 - **Framework**: [Next.js](https://nextjs.org/) 14
@@ -59,18 +78,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
 - `npm run start`: Start production server
 - `npm run export`: Generate static export
 - `npm run deploy`: Deploy to GitHub Pages
-
-## 🚢 Deployment
-
-### GitHub Pages
-The project is configured for GitHub Pages deployment:
-1. Pushes to `main` trigger automatic deployment
-2. Site is live at [https://avs-sin.github.io/gatcha](https://avs-sin.github.io/gatcha)
-
-### Vercel (Recommended)
-1. Sign up at [Vercel](https://vercel.com)
-2. Import your GitHub repository
-3. Vercel will automatically detect and optimize the Next.js project
 
 ## 📝 License
 
